@@ -92,7 +92,7 @@ class Train:
         self.now_time = time.time()
 
     def start(self):
-        val_iter = iter(self.val)
+        val_iter = None
         while True:
             for idx, (inputs, labels, labels_length) in enumerate(self.train):
                 self.now_time = time.time()
@@ -121,9 +121,10 @@ class Train:
 
                 if self.step % self.test_step == 0:
                     try:
+                        if val_iter is None:
+                            val_iter = iter(self.val)
                         test_inputs, test_labels, test_labels_length = next(val_iter)
-                    except Exception:
-                        del val_iter
+                    except StopIteration:
                         val_iter = iter(self.val)
                         test_inputs, test_labels, test_labels_length = next(val_iter)
                     if test_inputs.shape[0] < 5:

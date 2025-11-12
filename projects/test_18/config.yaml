@@ -12,12 +12,12 @@ System:
     Project: test_18
     Val: 0.03
 Train:
-    BATCH_SIZE: 256
+    BATCH_SIZE: 64
     CNN: {NAME: ddddocr}
     DROPOUT: 0.3
     LR: 0.01
     OPTIMIZER: SGD
     SAVE_CHECKPOINTS_STEP: 2000
     TARGET: {Accuracy: 0.97, Cost: 0.05, Epoch: 20}
-    TEST_BATCH_SIZE: 256
+    TEST_BATCH_SIZE: 64
     TEST_STEP: 1000
