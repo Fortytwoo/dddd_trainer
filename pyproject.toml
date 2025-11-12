@@ -1,0 +1,16 @@
+[project]
+name = "dddd-trainer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ddddocr>=1.5.6",
+    "fire>=0.7.1",
+    "loguru>=0.7.3",
+    "numpy<2",
+    "onnxscript>=0.5.0",
+    "pillow>=9.5.0",
+    "pyyaml>=6.0.3",
+    "tqdm>=4.67.1",
+]
