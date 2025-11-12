@@ -35,10 +35,20 @@ wheels = [
 ]
 
 [[package]]
+name = "configs"
+version = "3.0.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ca/9b/7f5ce5edb247816f67e5c109e1c005ea17ea4f4b9239300555811f3b0cf1/configs-3.0.3.zip", hash = "sha256:a5ab09e04e441dac6aa856a71fbf5ffc62954352630f79d311b8f8a31d9ce19c", size = 7983 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b0/ac/20230cd79c583ccf1e81f328befdffc1f8a23aee814c3261220954099c2a/configs-3.0.3-py3-none-any.whl", hash = "sha256:3aa54e99b012ece70d30b7926d9e8fa159544ca27445ec2776254e25ccc190a7", size = 7099 },
+]
+
+[[package]]
 name = "dddd-trainer"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "configs" },
     { name = "ddddocr" },
     { name = "fire" },
     { name = "loguru" },
@@ -52,6 +62,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "configs", specifier = ">=3.0.3" },
     { name = "ddddocr", specifier = ">=1.5.6" },
     { name = "fire", specifier = ">=0.7.1" },
     { name = "loguru", specifier = ">=0.7.3" },
