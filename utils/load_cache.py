@@ -220,7 +220,7 @@ class GetLoader:
                 batch_size=self.val_batch_size,
                 shuffle=True,
                 drop_last=True,
-                num_workers=2,
+                num_workers=0,  # Windows 上设置为 0 避免 multiprocessing pickle 问题
                 pin_memory=True,
                 collate_fn=self.collate_to_sparse,
             ),
