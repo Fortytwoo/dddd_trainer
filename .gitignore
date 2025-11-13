@@ -7,6 +7,7 @@ __pycache__/
 *.so
 
 cache/
+训练图片生成/
 
 # Distribution / packaging
 .Python

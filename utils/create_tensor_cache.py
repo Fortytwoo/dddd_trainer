@@ -88,4 +88,4 @@ def create_tensor_cache(project_name: str):
 
 
 if __name__ == "__main__":
-    create_tensor_cache("test_18")
+    create_tensor_cache("test_17")
