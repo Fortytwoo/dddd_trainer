@@ -8,10 +8,11 @@ __pycache__/
 
 cache/
 训练图片生成/
+训练图片生成_示例/
 
 
-checkpoints/*
-cache/*
+checkpoints/
+cache/
 
 # Distribution / packaging
 .Python
