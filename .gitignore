@@ -9,6 +9,10 @@ __pycache__/
 cache/
 训练图片生成/
 
+
+checkpoints/*
+cache/*
+
 # Distribution / packaging
 .Python
 build/
