@@ -339,7 +339,7 @@ System:
     GPU_ID: 0
     Path: /datas/datasets/images
     Project: ddddocr-2022-2-28
-    Val: 0.03
+    Val: 0.10
 Train:
     BATCH_SIZE: 32
     CNN: {NAME: ddddocr}
